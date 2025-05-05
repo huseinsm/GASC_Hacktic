@@ -1,0 +1,15 @@
+{
+    "name": "gasc-backend",
+    "version": "1.0.0",
+    "description": "Backend untuk Rekomendasi Usaha",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "@google/generative-ai": "^0.3.0",
+      "cors": "^2.8.5",
+      "dotenv": "^16.0.3",
+      "express": "^4.18.2"
+    }
+  }

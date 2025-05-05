@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rekomendasi Usaha</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <h1>Rekomendasi Usaha Anda</h1>
+    <p>Temukan ide usaha yang cocok berdasarkan tempat tinggal, modal, dan minat Anda.</p>
+    
+    <form id="business-form">
+      <label for="location">🗺️ Tempat Tinggal Anda:</label>
+      <input type="text" id="location" name="location" placeholder="Contoh: Malang, Jakarta, Yogyakarta" required />
+    
+      <label for="capital">💰 Modal yang Tersedia:</label>
+      <select id="capital" name="capital" required>
+        <option value="">-- Pilih Kategori Modal --</option>
+        <option value="<5 juta">< 5 juta</option>
+        <option value="5-10 juta">5 - 10 juta</option>
+        <option value="10-25 juta">10 - 25 juta</option>
+        <option value=">25 juta">> 25 juta</option>
+      </select>
+    
+      <label for="interest">📍 Minat dan Keahlian:</label>
+      <select id="interest" name="interest" required>
+        <option value="">-- Pilih Bidang Minat --</option>
+        <option value="memasak">Memasak</option>
+        <option value="fashion">Fashion</option>
+        <option value="kerajinan tangan">Kerajinan Tangan</option>
+        <option value="teknologi">Teknologi</option>
+        <option value="layanan jasa">Layanan Jasa</option>
+        <option value="otomotif">Otomotif</option>
+        <option value="pendidikan">Pendidikan</option>
+        <option value="pertanian">Pertanian / Perkebunan</option>
+      </select>
+    
+      <button type="submit">🔍 Cari Rekomendasi Usaha</button>
+    </form>
+    
+    <div id="recommendations" style="display: none;">
+      <h2>📌 Rekomendasi Usaha Anda</h2>
+    
+      <div class="result-block">
+        <strong>🧩 Jenis Usaha yang Cocok:</strong>
+        <p id="business-type"></p>
+      </div>
+    
+      <div class="result-block">
+        <strong>💡 Alternatif Usaha Menjanjikan:</strong>
+        <p id="promising-business"></p>
+      </div>
+    
+      <div class="result-block">
+        <strong>📌 Lokasi Strategis untuk Usaha:</strong>
+        <p id="strategic-location"></p>
+      </div>
+    
+      <div class="result-block">
+        <strong>🏪 Tempat Pembelian Bahan Baku:</strong>
+        <p id="supplier-recommendation"></p>
+      </div>
+    
+      <div class="result-block">
+        <strong>📈 Estimasi Potensi Keuntungan:</strong>
+        <p id="expected-profit"></p>
+      </div>
+    
+      <div class="result-block">
+        <strong>⚠️ Risiko Umum yang Perlu Diperhatikan:</strong>
+        <p id="potential-risk"></p>
+      </div>
+    </div>
+    
+</body>
+</html>
